@@ -1,5 +1,9 @@
 var cart = [];
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(101));
+}
+
 function getCart() {
  return cart;
 }
@@ -10,11 +14,17 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  
+  
+var newItem  = {itemName: itemName, itemPrice: getRandomInt(101) };
+cart.push(newItem);
+return ' has been added to you cart.';
 }
-
 function viewCart() {
-  // write your code here
+for (let i = 0; i < cart.length; i++)
+
+
+return 'In your cart, you have '
 }
 
 function total() {
@@ -24,7 +34,7 @@ function total() {
 function removeFromCart(item) {
   // write your code here
 }
-
 function placeOrder(cardNumber) {
   // write your code here
+
 }
