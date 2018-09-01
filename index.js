@@ -16,9 +16,9 @@ function setCart(c) {
 function addToCart(item) {
   
   
-var newItem  = {itemName: itemName, itemPrice: getRandomInt(101) };
+var newItem  = {itemName: item, itemPrice: getRandomInt(101) };
 cart.push(newItem);
-return ' has been added to you cart.';
+return ${item} " has been added to you cart."
 }
 function viewCart() {
 for (let i = 0; i < cart.length; i++)
