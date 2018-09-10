@@ -1,5 +1,7 @@
 var cart = []
 
 function addToCart(item){
-  var obj = {itemName: item, itemPrice: price}
+  for (var i = 0; i < cart.length; i++){
+    cart.push(item)
+  }
 }
