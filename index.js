@@ -22,17 +22,10 @@ function viewCart() {
   if (length === 0) {
     return ("Your shopping cart is empty.")
   }
- 
-
-  const itemsAndPrices = []
-
-  for (let i = 0; i < length; i++) {
-    let itemAndPrice = cart[i]
-    let item = Object.keys(itemAndPrice)[0]
-    let price = itemAndPrice[item]
-
-    itemsAndPrices.push(`${item} at \$${price}`)
-  }
+ else if (length === 1){
+ cart.forEach(item, price){
+   return 'In your cart, you have '+ item + ' at '+ price +'.'
+ }}
 
   console.log(`In your cart, you have ${itemsAndPrices.join(', ')}.`)
 }
