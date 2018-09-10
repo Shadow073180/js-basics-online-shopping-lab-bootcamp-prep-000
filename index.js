@@ -17,10 +17,10 @@ var obj = {itemName: item, itemPrice: price}
 }
 
 function viewCart() {
-  const l = cart.length
+  const length = cart.length
 
-  if (!l) {
-    return console.log("Your shopping cart is empty.")
+  if (length === 0) {
+    return ("Your shopping cart is empty.")
   }
 
   const itemsAndPrices = []
