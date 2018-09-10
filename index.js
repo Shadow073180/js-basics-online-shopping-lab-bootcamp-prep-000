@@ -23,7 +23,7 @@ function viewCart() {
     return ("Your shopping cart is empty.")
   }
  else if (length === 1){
- cart.forEach(item, price){
+ getCart.forEach(item, price){
    return 'In your cart, you have '+ item + ' at '+ price +'.'
  }}
 
