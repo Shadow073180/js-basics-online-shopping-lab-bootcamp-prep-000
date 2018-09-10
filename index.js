@@ -13,7 +13,7 @@ function addToCart(item) {
 var obj = {itemName: item, itemPrice: price}
   cart.push(obj)
 
-  console.log(item +' has been added to your cart.')
+  console.log(obj.item +' has been added to your cart.')
 
   return cart
 }
